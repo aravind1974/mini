@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style>
+      /* Style for the header */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+
+      /* Style for the main content */
+      main {
+        padding: 1em;
+        background-color: #eee;
+        text-align: center;
+      }
+
+      /* Style for the form */
+      form {
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #333;
+        margin: 2em auto;
+        width: 500px;
+      }
+
+      /* Style for the form input fields */
+      input[type="text"],
+      input[type="password"] {
+        padding: 0.5em;
+        margin: 1em;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #333;
+      }
+
+      /* Style for the submit button */
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+        margin: 1em;
+      }
+
+      /* Style for the submit button on hover */
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gym Management System</h1>
+    </header>
+    <main>
+      <h2>Login</h2>
+      <form action="#">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="submit" value="Login" />
+      </form>
+    </main>
+  </body>
+</html>

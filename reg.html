@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <style>
+      /* Style for the header */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+
+      /* Style for the main content */
+      main {
+        padding: 1em;
+        background-color: #eee;
+        text-align: center;
+      }
+
+      /* Style for the form */
+      form {
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #333;
+        margin: 2em auto;
+        width: 500px;
+      }
+
+      /* Style for the form input fields */
+      input[type="text"],
+      input[type="number"],
+      select {
+        padding: 0.5em;
+        margin: 1em;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #333;
+      }
+
+      /* Style for the submit button */
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+        margin: 1em;
+      }
+
+      /* Style for the submit button on hover */
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gym Management System</h1>
+    </header>
+    <main>
+      <h2>Registration</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="height">Height (in cm):</label>
+        <input type="number" id="height" name="height" min="1" required />
+
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" id="weight" name="weight" min="1" required />
+
+        <input type="submit" value="Register" />
+      </form>
+    </main>
+  </body>
+</html>
