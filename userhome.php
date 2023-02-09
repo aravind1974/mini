@@ -16,11 +16,24 @@
         text-align: center;
       }
 
-      /* Style for the links */
-      a {
-        color: #333;
-        padding: 0.5em;
+      /* Style for the navigation menu */
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        text-align: left;
+      }
+
+      /* Style for the navigation links */
+      nav a {
+        color: white;
         text-decoration: none;
+        padding: 0.5em;
+      }
+
+      /* Style for the active navigation link */
+      nav a.active {
+        background-color: #555;
       }
     </style>
   </head>
@@ -28,12 +41,16 @@
     <header>
       <h1>Gym Management System</h1>
     </header>
+    <nav>
+
+      <a href="user_trainer.php">Trainer</a>
+      <a href="user_diet.php">Diet</a>
+      <a href="user_workout.php">Workout</a>
+      <a href="user_account.php" style="float:right">Account Settings</a>
+    </nav>
     <main>
-      <h2>Welcome, User!</h2>
-      <p>Please choose from the following options:</p>
-      <a href="trainer.php">Trainer Information</a>
-      <a href="diet.php">Diet Information</a>
-      <a href="workout.php">Workout Information</a>
+
+     
     </main>
   </body>
 </html>
